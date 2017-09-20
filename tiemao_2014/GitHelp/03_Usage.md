@@ -1,38 +1,7 @@
-Git与TortoiseGit基本操作
+TortoiseGit基本操作
 ==
 
 #
-
-## 1. GitHub操作
-
-本节先简单介绍 git 的使用与操作, 然后再介绍 TortoiseGit 的使用与操作.
-
-先看看SVN的操作吧,  最常见的是 检出(Check out ...), 更新 (Update ...), 以及 提交(Commit ...); 相当于有一个服务器端, 可以多个客户端进行访问和操作.
-
-Git是SVN以后的新一代的版本控制系统/协议. 适合于大规模的开源软件多人协作的开发. 有一个总仓库(如GitHub,CSDN,OSchina等提供), 每个客户端都有一个本地仓库(这个本地仓库有点对应于SVN的服务端仓库), 以及一个可以看见的本地项目.
-
-让我们想想,至少需要有哪些功能.以 GitHub为例,首先,必须得有一个线上仓库(Repository), 这首先得新建一个仓库.
-
-要创建仓库,必须得先**注册账号**. 请参考: [创建GitHub技术博客全攻略: http://blog.csdn.net/renfufei/article/details/37725057](http://blog.csdn.net/renfufei/article/details/37725057)
-
-然后,登录 GitHub, 在右上角找到 New Repository 或者 加号下拉按钮(+),点击进入新建仓库页面: [https://github.com/new](https://github.com/new), 如下图所示:
-
-![](301_new_repository.png)
-
-依次填写仓库名,以及其他信息后,点击 "**Create repository**" 按钮,即可创建一个在线仓库. 因为这个仓库是挂在你的账号下的,所以可以是任意合法的字符,只要和你的其他仓库不冲突即可.
-
-仓库创建成功后,就会进入仓库预览页面, 如下图所示:
-
-![](302_cloneURL.png)
-
-然后，我们可以点击右边的 HTTPS 链接, 上方的文本框里面就显示了 HTTPS协议下的仓库访问地址, 可以点击进去全选,也可以点击右边的复制按钮复制到剪贴板. 例如,刚刚创建的项目访问路径是:
-
-	https://github.com/cncounter/LispGentleIntro.git
-
-是一个以  https:// 开始,以 .git 结尾的 URL,根据提示,叫做 clone URL. 
-
-好了,仓库创建完成,可以进入下一步了.
-
 
 ## 2. Git使用与操作
 
